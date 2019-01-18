@@ -1,4 +1,5 @@
 const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: './src/router.tsx',
@@ -21,6 +22,32 @@ module.exports = {
         test: /\.js$/,
         loader: "source-map-loader"
       }
+    ]
+  },
+
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          sourceMap: false,
+          compress: {
+            sequences: true,
+            dead_code: true,
+            conditionals: true,
+            booleans: true,
+            unused: true,
+            if_return: true,
+            join_vars: true,
+            drop_console: true
+          },
+          mangle: {
+            reserved: ['$super', '$', 'exports', 'require']
+          },
+          output: {
+            comments: false
+          } 
+        }
+      })
     ]
   },
 

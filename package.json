@@ -1,5 +1,8 @@
 {
   "name": "power-up",
+  "description": "none",
+  "repository": {},
+  "license": "none",
   "version": "1.0.0",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +19,7 @@
     "source-map-loader": "^0.2.4",
     "ts-loader": "^5.3.3",
     "typescript": "^3.2.4",
+    "uglifyjs-webpack-plugin": "^2.1.1",
     "webpack": "^4.28.4"
   }
 }
