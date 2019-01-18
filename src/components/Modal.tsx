@@ -1,7 +1,11 @@
-/* global TrelloPowerUp */
+import * as React from "react";
+declare var TrelloPowerUp;
+
+export class Modal extends React.Component {
+  
+}
 
 var t = TrelloPowerUp.iframe();
-
 // you can access arguments passed to your iframe like so
 var num = t.arg('rand');
 
@@ -17,7 +21,7 @@ t.render(function(){
 // is simple and consistent for the Trello user
 
 // close overlay if user clicks outside our content
-document.addEventListener('click', function(e) {
+document.addEventListener('click', function(e: any) {
   if(e.target.tagName == 'BODY') {
     t.closeOverlay().done();
   }

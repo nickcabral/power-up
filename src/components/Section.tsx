@@ -1,5 +1,9 @@
-/* global TrelloPowerUp */
+import * as React from "react";
+declare var TrelloPowerUp;
 
+export class Section extends React.Component {
+  
+}
 var t = TrelloPowerUp.iframe();
 
 // you can access arguments passed to your iframe like so

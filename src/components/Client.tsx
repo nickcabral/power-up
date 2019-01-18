@@ -1,8 +1,8 @@
-/* global TrelloPowerUp */
-
-// we can access Bluebird Promises as follows
-var Promise = TrelloPowerUp.Promise;
-
+import * as React from "react";
+declare var TrelloPowerUp;
+export class Client extends React.Component {
+  
+}
 /*
 
 Trello Data Access

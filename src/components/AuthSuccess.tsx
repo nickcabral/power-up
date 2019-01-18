@@ -1,4 +1,5 @@
-/* global TrelloPowerUp */
+import * as React from "react";
+declare var TrelloPowerUp;
 
 var t = TrelloPowerUp.iframe();
 
@@ -13,3 +14,7 @@ t.render(function(){
   // you might want to react to, such as new data being
   // stored with t.set()
 });
+
+export class AuthSuccess extends React.Component {
+  
+}

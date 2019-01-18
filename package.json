@@ -1,0 +1,21 @@
+{
+  "name": "power-up",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/nickcabral/power-up#readme",
+  "dependencies": {
+    "@types/react": "^16.7.20",
+    "@types/react-dom": "^16.0.11",
+    "tslib": "^1.9.3"
+  },
+  "devDependencies": {
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.2.4",
+    "webpack": "^4.28.4"
+  }
+}

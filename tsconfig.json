@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom"
+        ],
+        "importHelpers": true,
+        "removeComments": true,
+        "outDir": "./dist/",
+        "sourceMap": true,
+        "jsx": "react",
+        "allowJs": true,
+        "baseUrl": "src",
+        "paths": {
+            "@comps/*": ["components/*"]
+        },
+        "moduleResolution": "node"
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}
